@@ -20,7 +20,9 @@ const options = {
 export const fetchDataFromApi = async (url) => {
   const data = await fetch(`${BASE_URL}/${url}`, options);
   const json = await data.json()
+  console.log(json)
   return json;
+
 }
 // try {
 // 	const response = await axios.request(options);
